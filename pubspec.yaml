@@ -11,22 +11,21 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
 
-  flutter_plugin_android_lifecycle: ^2.0.17
-  plugin_platform_interface: ^2.1.8
-  ffi: ^2.0.1
-  path: ^1.8.2
-  win32: ^5.5.1
-  cross_file: ^0.3.3+7
-  web: ^1.0.0
+  flutter_plugin_android_lifecycle:
+  plugin_platform_interface:
+  ffi:
+  path:
+  win32:
+  cross_file:
 
 dev_dependencies:
-  lints: ^4.0.0
+  lints: 
   flutter_test:
     sdk: flutter
 
 environment:
-  sdk: ">=3.4.0 <4.0.0"
-  flutter: ">=3.22.0"
+  sdk: ">=2.16.0 <4.0.0"
+  flutter: ">=2.10.5"
 
 flutter:
   plugin:
@@ -38,12 +37,7 @@ flutter:
       ios:
         pluginClass: FilePickerPlugin
         dartPluginClass: FilePickerIO
-      web:
-        pluginClass: FilePickerWeb
-        fileName: _internal/file_picker_web.dart
       macos:
         dartPluginClass: FilePickerMacOS
-      windows:
-        dartPluginClass: FilePickerWindows
       linux:
         dartPluginClass: FilePickerLinux
